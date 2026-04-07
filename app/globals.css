@@ -10,7 +10,7 @@
   --color-white: #e6f1ff;
   --color-accent: #64ffda;
   
-  --font-sans: var(--font-plus-jakarta-sans);
+  --font-sans: var(--font-inter);
 }
 
 :root {

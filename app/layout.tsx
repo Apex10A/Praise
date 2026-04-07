@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Plus_Jakarta_Sans } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 
-const plusJakartaSans = Plus_Jakarta_Sans({
-  variable: "--font-plus-jakarta-sans",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
 });
 
@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${plusJakartaSans.variable} font-sans bg-navy text-slate antialiased selection:bg-accent/30 selection:text-accent`}>
+      <body className={`${inter.variable} font-sans bg-navy text-slate antialiased selection:bg-accent/30 selection:text-accent`}>
         {children}
       </body>
     </html>
