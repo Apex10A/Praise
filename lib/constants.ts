@@ -1,52 +1,120 @@
 export const DATA = {
   name: "Praise Afolabi",
   role: "Frontend Engineer",
-  intro: "I build accessible, inclusive products and digital experiences for the web.",
-  about: `I’m a frontend engineer with an expertise of building scalable, high-performance web applications. Currently, I work as a frontend architect at Cleaques, a pan-African diaspora platform, where I lead the development of a comprehensive travel and services ecosystem spanning flights, stays, rides, and curated experiences.
-
-I specialize in Next.js, TypeScript, and React, with a strong focus on clean architecture, performance, and developer experience. My work sits at the intersection of design and engineering, where I build accessible, pixel-perfect interfaces that don’t just look good but feel seamless to use.
-
-Previously, I worked at VeendHQ, a Techstars-backed fintech startup, where I contributed to shipping production features in a regulated financial environment, building reliable, user-focused products across web and mobile.
-
-In my spare time, you’ll usually find me sketching, listening to music, and staying consistent in the gym.`,
+  location: "Akure, Ondo State",
+  phone: "+234 816 086 2773",
+  email: "pafolabi740@gmail.com",
+  intro: "I build scalable, performant web applications with a focus on clean architecture and developer experience.",
+  about: `Frontend Engineer with 2+ years of professional experience building scalable, performant web applications. Currently serving as a frontend architect at Cleaques, a pan-African diaspora platform — where I manage a comprehensive travel and services ecosystem. Previously contributed to fintech product development at VeendHQ (backed by Techstars), gaining hands-on experience shipping features in a regulated financial environment. Proficient in Next.js, TypeScript, and React with a strong eye for clean architecture and developer experience.`,
   experience: [
     {
-      company: "[Company Name]",
-      role: "Senior Software Engineer",
-      period: "2021 — PRESENT",
-      description: "Deliver high-quality, robust production code for a diverse array of projects. Collaborate with cross-functional teams including designers, engineers, and product managers.",
-      technologies: ["React", "TypeScript", "Next.js", "Tailwind CSS"],
+      company: "Cleaques",
+      role: "Frontend Engineer",
+      period: "Oct 2025 – Present",
+      location: "Remote",
+      description: [
+        "Building the entire frontend for a diaspora-focused travel platform covering flights, stays, and rides.",
+        "Building a multi-service vendor dashboard for real-time listing management and provider interactions.",
+        "Built a digital wallet and payment flow integration to support seamless in-app transactions.",
+        "Building fluid UI animations and complex booking states using Framer Motion and Zustand.",
+      ],
+      technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "Zustand", "Jira", "Figma"],
     },
     {
-      company: "[Previous Company]",
-      role: "Frontend Developer",
-      period: "2019 — 2021",
-      description: "Developed and maintained user-facing features using modern JavaScript frameworks. Optimized applications for maximum speed and scalability.",
-      technologies: ["React", "Redux", "Sass", "Jest"],
+      company: "VeendHQ",
+      role: "Frontend Engineer",
+      period: "Jun 2025 – Nov 2025",
+      location: "Onsite · Lagos, Nigeria",
+      description: [
+        "Built fintech products for a Techstars-backed startup offering payroll loans and BNPL services.",
+        "Built and maintained cross-platform UI components using Next.js and React Native for consistency.",
+        "Built accessible, responsive interfaces with Chakra UI following strict fintech design standards.",
+        "Built critical financial flows including loan applications and repayment dashboards for civil servants.",
+      ],
+      technologies: ["Next.js", "React Native", "Chakra UI", "React Query", "Git", "Bitbucket"],
     },
+     {
+      company: "HNG Zuri",
+      role: "Frontend Engineer",
+      period: "Jun 2025 – Nov 2025",
+      location: "Remote ",
+      description: [
+        "Built fintech products for a Techstars-backed startup offering payroll loans and BNPL services.",
+        "Built and maintained cross-platform UI components using Next.js and React Native for consistency.",
+        "Built accessible, responsive interfaces with Chakra UI following strict fintech design standards.",
+        "Built critical financial flows including loan applications and repayment dashboards for civil servants.",
+      ],
+      technologies: ["Next.js", "React Native", "Chakra UI", "React Query", "Git", "Bitbucket"],
+    },
+     {
+      company: "IAIIEA",
+      role: "Frontend Engineer",
+      period: "Jun 2025 – Nov 2025",
+      location: "Remote ",
+      description: [
+        "Built fintech products for a Techstars-backed startup offering payroll loans and BNPL services.",
+        "Built and maintained cross-platform UI components using Next.js and React Native for consistency.",
+        "Built accessible, responsive interfaces with Chakra UI following strict fintech design standards.",
+        "Built critical financial flows including loan applications and repayment dashboards for civil servants.",
+      ],
+      technologies: ["Next.js", "React Native", "Chakra UI", "React Query", "Git", "Bitbucket"],
+    },
+
   ],
   projects: [
     {
       title: "Otawatch",
       description: "A comprehensive web application that solves [Problem]. Features include real-time data processing, responsive design, and seamless user authentication.",
       technologies: ["Next.js", "Framer Motion", "Tailwind CSS"],
-      github: "https://github.com",
+      github: "https://github.com/Apex10A",
       external: "https://www.otawatch.one/",
     },
+     {
+      title: "Otawatch",
+      description: "A comprehensive web application that solves [Problem]. Features include real-time data processing, responsive design, and seamless user authentication.",
+      technologies: ["Next.js", "Framer Motion", "Tailwind CSS"],
+      github: "https://github.com/Apex10A",
+      external: "https://www.otawatch.one/",
+    },
+     {
+      title: "Otawatch",
+      description: "A comprehensive web application that solves [Problem]. Features include real-time data processing, responsive design, and seamless user authentication.",
+      technologies: ["Next.js", "Framer Motion", "Tailwind CSS"],
+      github: "https://github.com/Apex10A",
+      external: "https://www.otawatch.one/",
+    },
+  ],
+  skills: {
+    languages: ["JavaScript (ES6+)", "TypeScript", "HTML5", "CSS3"],
+    frameworks: ["Next.js", "React.js", "React Native", "Framer Motion", "Chakra UI", "Tailwind CSS"],
+    stateManagement: ["Zustand", "React Context", "React Query"],
+    tools: ["Git", "GitHub", "Bitbucket", "Jira", "Figma", "Vite"],
+    practices: ["Component-driven architecture", "Responsive design", "Performance optimisation", "Accessibility (a11y)", "Agile/Sprint workflows"],
+  },
+  education: [
     {
-      title: "Project Two",
-      description: "An innovative digital solution designed to [Benefit]. This project focuses on high performance and exceptional user experience.",
-      technologies: ["React", "TypeScript", "Node.js"],
-      github: "https://github.com",
-      external: "https://example.com",
+      degree: "B.Eng. Software Engineering",
+      institution: "Federal University of Technology, Akure (FUTA)",
+      location: "Akure, Nigeria",
+      period: "Aug 2020 – Aug 2026 (Expected)",
+      description: [
+        "Building a solid foundation in software engineering principles, algorithms, data structures, and system design.",
+        "Applied academic knowledge through multiple hands-on software projects covering web development, application architecture, and software optimisation.",
+      ],
+    },
+  ],
+  awards: [
+    {
+      title: "HNG Internship Finalist",
+      description: "Back-to-back finalist in HNG 11 and HNG 12, two of Africa's most competitive developer internship programs (certified).",
     },
   ],
   socials: {
-    github: "https://github.com",
-    linkedin: "https://linkedin.com",
+    github: "https://github.com/Apex10A",
+    linkedin: "https://linkedin.com/in/pafolabi740",
     twitter: "https://twitter.com",
     instagram: "https://instagram.com",
-    email: "mailto:hello@example.com",
+    email: "mailto:pafolabi740@gmail.com",
   },
   navLinks: [
     { name: "About", href: "#about" },

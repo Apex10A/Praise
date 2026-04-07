@@ -36,7 +36,7 @@ export default function Home() {
         <div className="lg:flex lg:justify-between lg:gap-4">
           <Sidebar />
           
-          <main className="pt-24 lg:w-1/2 lg:py-24">
+          <main className="pt-24 lg:w-2/3 lg:py-24">
             {/* <Hero /> */}
             <About />
             <Experience />
