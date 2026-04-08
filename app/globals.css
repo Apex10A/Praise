@@ -10,7 +10,7 @@
   --color-white: #e6f1ff;
   --color-accent: #64ffda;
   
-  --font-sans: var(--font-inter);
+  --font-sans: var(--font-gabarito), ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 :root {

@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Gabarito } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({
-  variable: "--font-inter",
+const gabarito = Gabarito({
+  variable: "--font-gabarito",
   subsets: ["latin"],
 });
 
@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${inter.variable} font-sans bg-navy text-slate antialiased selection:bg-accent/30 selection:text-accent`}>
+      <body className={`${gabarito.variable} ${gabarito.className} bg-navy text-slate antialiased selection:bg-accent/30 selection:text-accent`}>
         {children}
       </body>
     </html>
