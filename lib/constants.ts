@@ -4,14 +4,16 @@ export const DATA = {
   location: "Akure, Ondo State",
   phone: "+234 816 086 2773",
   email: "pafolabi740@gmail.com",
-  intro: "I build scalable, performant web applications with a focus on clean architecture and developer experience.",
-  about: `I’m a frontend engineer with an expertise in building accessible, pixel-perfect user interfaces. I take pride in crafting thoughtful, inclusive products and have a sharp eye for the little details that elevate user experience. I do my best work at the intersection of design and engineering, where great UX meets clean, scalable code.
+  intro: "I build accessible, pixel-perfect experiences for the web.",
+  about: `I'm a frontend engineer with an expertise in building accessible, pixel-perfect user interfaces. I take pride in crafting thoughtful, inclusive products and have a sharp eye for the little details that elevate user experience. I do my best work at the intersection of design and engineering, where great UX meets clean, scalable code.
 
-Currently, I'm on the component library team at Klaviyo, where I maintain and evolve the company's design system. I lead engineering efforts across components, tooling, and patterns, partnering closely with designers and engineers to ensure accessibility is built into the foundation of our products.
+Currently, I'm on the Engineering team at Cleaques, where I'm building the frontend for a diaspora-focused travel platform. I drive engineering efforts across components, tooling, and patterns, partnering closely with designers and engineers to ensure accessibility is built into the foundation of our products.
 
-Previously, I’ve worked across a wide range of environments — from product studios to startups and large tech companies — including Apple, Starry Internet, and Upstatement. Outside of my day-to-day work, I also created an online video course a few years ago which walks through building a real-world, API-driven application from scratch. These experiences have shaped how I think about building products that are both well-crafted and widely usable.
+Previously, I've worked across a wide range of environments, from large fintech organizations to startups and non-profit platforms — including building the IAIIEA platform, a full-featured Next.js 14 web application for an international integrity and evaluation agency, complete with an admin dashboard, members-only portal, payment processing, and event scheduling. 
 
-In my spare time, you can usually find me climbing, playing tennis, hanging out with my wife and two cats, or running around Hyrule searching `,
+I was also a two-time finalist at HNG Internship, one of Africa's most competitive virtual tech programs, which pushed me to build fast, think clearly under pressure, and collaborate across distributed teams. Outside of my day-to-day work, I also created an online video course a few years ago which walks through building a real-world, API-driven application from scratch. These experiences have shaped how I think about building products that are both well-crafted and widely usable.
+
+In my spare time, you can usually find me drawing, flipping through a self-development book, running a career mode on FIFA, or watching Barcelona — because some of us just never gave up on them.`,
   experience: [
     {
       company: "Cleaques",
