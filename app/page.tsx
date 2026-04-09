@@ -24,7 +24,6 @@ export default function Home() {
 
   return (
     <div className="relative font-sans bg-navy selection:bg-accent/30 selection:text-accent">
-      {/* Background Spotlight */}
       <div
         className="pointer-events-none fixed inset-0 z-30 transition duration-300 lg:absolute"
         style={{
@@ -37,7 +36,6 @@ export default function Home() {
           <Sidebar />
           
           <main className="pt-24 lg:w-2/3 lg:py-24">
-            {/* <Hero /> */}
             <About />
             <Experience />
             <Projects />
