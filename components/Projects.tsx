@@ -1,5 +1,5 @@
 "use client";
-
+import Image from "next/image";
 import { DATA } from "@/lib/constants";
 import { motion } from "framer-motion";
 import { ExternalLink } from "lucide-react";
@@ -70,8 +70,13 @@ export default function Projects() {
                 </div>
                 {/* Optional project image placeholder */}
                 <div className="z-10 sm:order-1 sm:col-span-2 mt-2 sm:mt-0">
-                  <div className="aspect-video w-full rounded border-2 border-slate/20 bg-slate/10 transition group-hover:border-slate/50 sm:aspect-square flex items-center justify-center text-[10px] text-slate/50">
-                    [ Project Preview ]
+                  <div className="relative aspect-video w-full rounded border-2 border-slate/20 bg-slate/10 transition group-hover:border-slate/50 sm:aspect-square overflow-hidden">
+                    <Image
+                      src={project.image}
+                      alt={project.title}
+                      fill
+                      className="object-cover transition duration-300 group-hover:scale-110"
+                    />
                   </div>
                 </div>
               </div>
