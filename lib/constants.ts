@@ -81,21 +81,6 @@ In my spare time, you can usually find me drawing, flipping through a self-devel
   ],
   projects: [
     {
-      title: "Vendra",
-      description:
-        "A comprehensive multi-vendor e-commerce platform that streamlines the connection between independent sellers and customers through a unified marketplace. Features include a dedicated vendor dashboard with real-time sales analytics using Recharts, advanced product filtering and search, secure multi-role authentication with Next-Auth, and a complete order management system integrated with Prisma and PostgreSQL.",
-      technologies: [
-        "Prism",
-        "PostgreSQL",
-        "Next.js",
-        "Framer Motion",
-        "Tailwind CSS",
-      ],
-      github: "https://github.com/Apex10A",
-      external: "https://www.otawatch.one/",
-      image: "/vendra.png",
-    },
-    {
       title: "GbejaQR",
       description:
         "A comprehensive web application that solves the security risks associated with malicious QR codes by providing a real-time verification and protection platform. Features include AI-powered threat detection for phishing and malware, deep link analysis with redirect exposure, and a privacy-first scanning engine optimized for mobile performance.",
@@ -121,6 +106,22 @@ In my spare time, you can usually find me drawing, flipping through a self-devel
       github: "https://github.com/Apex10A",
       external: "https://www.otawatch.one/",
       image: "/ohana.png",
+    },
+        {
+      title: "Vendra (Coming soon)",
+      description:
+        "A comprehensive multi-vendor e-commerce platform that streamlines the connection between independent sellers and customers through a unified marketplace. Features include a dedicated vendor dashboard with real-time sales analytics using Recharts, advanced product filtering and search, secure multi-role authentication with Next-Auth, and a complete order management system integrated with Prisma and PostgreSQL.",
+      technologies: [
+        "Prism",
+        "PostgreSQL",
+        "Next.js",
+        "Tailwind CSS",
+        "Neon.js",
+        "Redux",
+      ],
+      github: "https://github.com/Apex10A",
+      external: "https://www.otawatch.one/",
+      image: "/vendraa.png",
     },
   ],
   skills: {
@@ -165,7 +166,7 @@ In my spare time, you can usually find me drawing, flipping through a self-devel
   socials: {
     github: "https://github.com/Apex10A",
     linkedin: "https://linkedin.com/in/pafolabi740",
-    twitter: "https://twitter.com",
+    twitter: "https://x.com",
     instagram: "https://instagram.com",
     email: "mailto:pafolabi740@gmail.com",
   },
