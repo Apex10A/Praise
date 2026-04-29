@@ -1,17 +1,17 @@
 export const DATA = {
   name: "Praise Afolabi",
-  role: "Frontend Engineer",
+  role: "Frontend Engineer & QA",
   location: "Akure, Ondo State",
   phone: "+234 816 086 2773",
   email: "pafolabi740@gmail.com",
-  intro: "I build accessible, pixel-perfect experiences for the web.",
+  intro: "I build accessible, pixel-perfect experiences for the web — and I test them properly.",
   about: `I'm a frontend engineer with an expertise in building accessible, pixel-perfect user interfaces. I take pride in crafting thoughtful, inclusive products and have a sharp eye for the little details that elevate user experience. I do my best work at the intersection of design and engineering, where great UX meets clean, scalable code.
 
 Currently, I'm on the Engineering team at Cleaques, where I'm building the frontend for a diaspora-focused travel platform. I drive engineering efforts across components, tooling, and patterns, partnering closely with designers and engineers to ensure accessibility is built into the foundation of our products.
 
 Previously, I've worked across a wide range of environments, from large fintech organizations to startups and non-profit platforms — including building the IAIIEA platform, a full-featured Next.js 14 web application for an international integrity and evaluation agency, complete with an admin dashboard, members-only portal, payment processing, and event scheduling. 
 
-I was also a two-time finalist at HNG Internship, one of Africa's most competitive virtual tech programs, which pushed me to build fast, think clearly under pressure, and collaborate across distributed teams. Outside of my day-to-day work, I also created an online video course a few years ago which walks through building a real-world, API-driven application from scratch. These experiences have shaped how I think about building products that are both well-crafted and widely usable.
+I was also a two-time finalist at HNG Internship, one of Africa's most competitive virtual tech programs, which pushed me to build fast, think clearly under pressure, and collaborate across distributed teams. I also take testing seriously as part of my engineering practice — I've built multi-layer test suites using Vitest, Playwright, and React Testing Library, covering unit, integration, and end-to-end layers, including offline PWA behavior. Outside of my day-to-day work, I also created an online video course a few years ago which walks through building a real-world, API-driven application from scratch. These experiences have shaped how I think about building products that are both well-crafted and widely usable.
 
 In my spare time, you can usually find me drawing, flipping through a self-development book, running a career mode on FIFA, or watching Barcelona — because some of us just never gave up on them.`,
   experience: [
@@ -86,8 +86,24 @@ In my spare time, you can usually find me drawing, flipping through a self-devel
         "A comprehensive web application that solves the security risks associated with malicious QR codes by providing a real-time verification and protection platform. Features include AI-powered threat detection for phishing and malware, deep link analysis with redirect exposure, and a privacy-first scanning engine optimized for mobile performance.",
       technologies: ["Next.js", "Framer Motion", "Tailwind CSS"],
       github: "https://github.com/Apex10A",
-      external: "https://www.otawatch.one/",
+      external: "https://v0-gbeja-qr-landing-page-design.vercel.app/",
       image: "/gbejaa.png",
+    },
+    {
+      title: "Habit Tracker PWA",
+      description: "A spec-driven Progressive Web App built from a formal Technical Requirements Document. The primary focus was engineering discipline — strict data contracts, deterministic route behavior, and a full multi-layer test suite spanning unit, integration, and end-to-end layers. Features include local authentication, habit management with streak tracking, and offline support via a custom service worker.",
+      technologies: [
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "Vitest",
+        "Playwright",
+        "React Testing Library",
+        "PWA"
+      ],
+      github: "https://github.com/Apex10A/Habit-tracker-mobile-first",
+      external: "YOUR_DEPLOYED_URL_HERE",
+      image: "/habit-tracker.png",
     },
     {
       title: "Invoice app",
@@ -95,7 +111,7 @@ In my spare time, you can usually find me drawing, flipping through a self-devel
         "A comprehensive web application that solves the challenge of fragmented invoice management for freelancers and small businesses. Features include real-time total calculations, status-based filtering, local data persistence via localStorage, and a fully responsive design with native dark mode support.",
       technologies: ["Next.js", "Framer Motion", "Tailwind CSS"],
       github: "https://github.com/Apex10A",
-      external: "https://www.otawatch.one/",
+      external: "https://invoice-app-inky-nine.vercel.app/",
       image: "/invoice.png",
     },
     {
@@ -104,7 +120,7 @@ In my spare time, you can usually find me drawing, flipping through a self-devel
         "A comprehensive web application that solves [Problem]. Features include real-time data processing, responsive design, and seamless user authentication.",
       technologies: ["Next.js", "Framer Motion", "Tailwind CSS"],
       github: "https://github.com/Apex10A",
-      external: "https://www.otawatch.one/",
+      external: "https://ohana-webcompany.vercel.app//",
       image: "/ohana.png",
     },
         {
@@ -120,7 +136,7 @@ In my spare time, you can usually find me drawing, flipping through a self-devel
         "Redux",
       ],
       github: "https://github.com/Apex10A",
-      external: "https://www.otawatch.one/",
+      external: "https://vendra.com",
       image: "/vendraa.png",
     },
   ],
@@ -135,13 +151,34 @@ In my spare time, you can usually find me drawing, flipping through a self-devel
       "Tailwind CSS",
     ],
     stateManagement: ["Zustand", "React Context", "React Query"],
-    tools: ["Git", "GitHub", "Bitbucket", "Jira", "Figma", "Vite"],
+    tools: [
+      "Git",
+      "GitHub",
+      "Bitbucket",
+      "Jira",
+      "Figma",
+      "Vite",
+      "Vitest",
+      "Playwright",
+      "React Testing Library",
+    ],
+    testing: [
+      "Unit testing",
+      "Integration testing",
+      "End-to-end testing (E2E)",
+      "Component testing",
+      "Test coverage reporting",
+      "Spec-driven development",
+      "PWA offline testing",
+    ],
     practices: [
       "Component-driven architecture",
       "Responsive design",
       "Performance optimisation",
       "Accessibility (a11y)",
       "Agile/Sprint workflows",
+      "Test-driven discipline",
+      "Spec-driven development",
     ],
   },
   education: [
