@@ -19,9 +19,10 @@ export default function About() {
         className="flex flex-col md:flex-row gap-8"
       >
         <div className="text-left">
-          <p className="mb-4 text-slate leading-relaxed whitespace-pre-wrap">
-            {DATA.about}
-          </p>
+          <p 
+            className="mb-4 text-slate leading-relaxed whitespace-pre-wrap"
+            dangerouslySetInnerHTML={{ __html: DATA.about.replace(/\n/g, '<br />') }}
+          />
         </div>
        
       </motion.div>
