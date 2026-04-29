@@ -13,7 +13,7 @@ Previously, I've worked across a wide range of environments, from large fintech 
 
 I was also a two-time finalist at HNG Internship, one of Africa's most competitive virtual tech programs, which pushed me to build fast, think clearly under pressure, and collaborate across distributed teams. I also take testing seriously as part of my engineering practice, I've built multi-layer test suites using Vitest, Playwright, and React Testing Library, covering unit, integration, and end-to-end layers, including offline PWA behavior. 
 
-In my spare time, you can usually find me drawing, flipping through a self-development book, running a career mode on FIFA, or watching Barcelona — because some of us just never gave up on them.`,
+In my spare time, you can usually find me drawing, flipping through a self-development book, running a career mode on FIFA, or watching Barcelona, because some of us just never gave up on them.`,
   experience: [
     {
       company: "Cleaques",
@@ -102,7 +102,7 @@ In my spare time, you can usually find me drawing, flipping through a self-devel
         "PWA"
       ],
       github: "https://github.com/Apex10A/Habit-tracker-mobile-first",
-      external: "YOUR_DEPLOYED_URL_HERE",
+      external: "https://habit-tracker-mobile-first.vercel.app/",
       image: "/habit-tracker.png",
     },
     {
@@ -120,7 +120,7 @@ In my spare time, you can usually find me drawing, flipping through a self-devel
         "A comprehensive web application that solves [Problem]. Features include real-time data processing, responsive design, and seamless user authentication.",
       technologies: ["Next.js", "Framer Motion", "Tailwind CSS"],
       github: "https://github.com/Apex10A",
-      external: "https://ohana-webcompany.vercel.app//",
+      external: "https://ohana-webcompany.vercel.app/",
       image: "/ohana.png",
     },
         {
