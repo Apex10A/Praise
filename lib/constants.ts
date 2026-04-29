@@ -4,14 +4,14 @@ export const DATA = {
   location: "Akure, Ondo State",
   phone: "+234 816 086 2773",
   email: "pafolabi740@gmail.com",
-  intro: "I build accessible, pixel-perfect experiences for the web — and I test them properly.",
+  intro: "I build accessible, pixel-perfect experiences for the web and I test them properly.",
   about: `I'm a frontend engineer with an expertise in building accessible, pixel-perfect user interfaces. I take pride in crafting thoughtful, inclusive products and have a sharp eye for the little details that elevate user experience. I do my best work at the intersection of design and engineering, where great UX meets clean, scalable code.
 
-Currently, I'm on the Engineering team at Cleaques, where I'm building the frontend for a diaspora-focused travel platform. I drive engineering efforts across components, tooling, and patterns, partnering closely with designers and engineers to ensure accessibility is built into the foundation of our products.
+Currently, I'm on the Engineering team at <strong class="text-lightest-slate">Cleaques</strong>, where I'm building the frontend for a diaspora-focused travel platform. I drive engineering efforts across components, tooling, and patterns, partnering closely with designers and engineers to ensure accessibility is built into the foundation of our products.
 
-Previously, I've worked across a wide range of environments, from large fintech organizations to startups and non-profit platforms — including building the IAIIEA platform, a full-featured Next.js 14 web application for an international integrity and evaluation agency, complete with an admin dashboard, members-only portal, payment processing, and event scheduling. 
+Previously, I've worked across a wide range of environments, <strong class="text-lightest-slate">from large fintech organizations to startups</strong> and non-profit platforms — <strong class="text-lightest-slate">including building the IAIIEA platform</strong>, a full-featured Next.js 14 web application for an international integrity and evaluation agency, complete with an admin dashboard, members-only portal, payment processing, and event scheduling. 
 
-I was also a two-time finalist at HNG Internship, one of Africa's most competitive virtual tech programs, which pushed me to build fast, think clearly under pressure, and collaborate across distributed teams. I also take testing seriously as part of my engineering practice, I've built multi-layer test suites using Vitest, Playwright, and React Testing Library, covering unit, integration, and end-to-end layers, including offline PWA behavior. 
+I was also a <strong class="text-lightest-slate">two-time finalist at HNG Internship</strong>, <strong class="text-lightest-slate">one of Africa's most competitive virtual tech programs</strong>, which pushed me to build fast, think clearly under pressure, and collaborate across distributed teams. I also take testing seriously as part of my engineering practice, I've built multi-layer test suites using Vitest, Playwright, and React Testing Library, covering unit, integration, and end-to-end layers, including offline PWA behavior. 
 
 In my spare time, you can usually find me drawing, flipping through a self-development book, running a career mode on FIFA, or watching Barcelona, because some of us just never gave up on them.`,
   experience: [
