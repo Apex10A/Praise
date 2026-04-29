@@ -203,7 +203,7 @@ In my spare time, you can usually find me drawing, flipping through a self-devel
   socials: {
     github: "https://github.com/Apex10A",
     linkedin: "https://linkedin.com/in/pafolabi740",
-    twitter: "https://x.com",
+    twitter: "https://x.com/dev_apexxr",
     instagram: "https://instagram.com",
     email: "mailto:pafolabi740@gmail.com",
   },
