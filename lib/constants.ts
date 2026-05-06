@@ -4,7 +4,8 @@ export const DATA = {
   location: "Akure, Ondo State",
   phone: "+234 816 086 2773",
   email: "pafolabi740@gmail.com",
-  intro: "I build accessible, pixel-perfect experiences for the web and I test them properly.",
+  intro:
+    "I build accessible, pixel-perfect experiences for the web and I test them properly.",
   about: `I'm a frontend engineer with an expertise in building accessible, pixel-perfect user interfaces. I take pride in crafting thoughtful, inclusive products and have a sharp eye for the little details that elevate user experience. I do my best work at the intersection of design and engineering, where great UX meets clean, scalable code.
 
 Currently, I'm on the Engineering team at <strong class="text-lightest-slate">Cleaques</strong>, where I'm building the frontend for a diaspora-focused travel platform. I drive engineering efforts across components, tooling, and patterns, partnering closely with designers and engineers to ensure accessibility is built into the foundation of our products.
@@ -91,7 +92,8 @@ In my spare time, you can usually find me drawing, flipping through a self-devel
     },
     {
       title: "Habit Tracker PWA",
-      description: "A spec-driven Progressive Web App built from a formal Technical Requirements Document. The primary focus was engineering discipline — strict data contracts, deterministic route behavior, and a full multi-layer test suite spanning unit, integration, and end-to-end layers. Features include local authentication, habit management with streak tracking, and offline support via a custom service worker.",
+      description:
+        "A spec-driven Progressive Web App built from a formal Technical Requirements Document. The primary focus was engineering discipline — strict data contracts, deterministic route behavior, and a full multi-layer test suite spanning unit, integration, and end-to-end layers. Features include local authentication, habit management with streak tracking, and offline support via a custom service worker.",
       technologies: [
         "Next.js",
         "TypeScript",
@@ -99,11 +101,45 @@ In my spare time, you can usually find me drawing, flipping through a self-devel
         "Vitest",
         "Playwright",
         "React Testing Library",
-        "PWA"
+        "PWA",
       ],
       github: "https://github.com/Apex10A/Habit-tracker-mobile-first",
       external: "https://habit-tracker-mobile-first.vercel.app/",
       image: "/habit-tracker.png",
+    },
+    {
+      title: "AI Page Summarizer",
+      description:
+        "A Chrome Extension (Manifest V3) that extracts content from any webpage and generates structured AI summaries using the Gemini API. Built with a security-first architecture — the API key lives exclusively in the background service worker, never exposed to content scripts or the popup. Features include bullet-point summaries, key insights, estimated reading time, and a 24-hour URL-based cache to prevent duplicate API calls.",
+      technologies: [
+        "Chrome Extension",
+        "Manifest V3",
+        "JavaScript",
+        "Gemini API",
+        "Service Worker",
+        "Chrome Storage API",
+      ],
+      github: "https://github.com/Apex10A/AI-Page-Summarizer-Chrome-Extension",
+      external: "https://github.com/Apex10A/AI-Page-Summarizer-Chrome-Extension",
+      image: "/extension.png",
+    },
+    {
+      title: "MutterBox — E2EE Messaging",
+      description:
+        "A secure end-to-end encrypted messaging application where the server never sees plaintext. Built with the Web Crypto API using hybrid encryption — AES-GCM for message encryption and RSA-OAEP for key exchange. Private keys are generated on the client, wrapped with PBKDF2-derived keys, and stored exclusively in IndexedDB. Features real-time messaging via WebSocket, automatic key restoration on new devices, and optimistic UI updates.",
+      technologies: [
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "Web Crypto API",
+        "IndexedDB",
+        "WebSocket",
+        "RSA-OAEP",
+        "AES-GCM",
+      ],
+      github: "https://github.com/Apex10A/E2e-Encryption-app",
+      external: "https://e2e-encryption-app.vercel.app/",
+      image: "/e2e.png",
     },
     {
       title: "Invoice app",
@@ -114,16 +150,16 @@ In my spare time, you can usually find me drawing, flipping through a self-devel
       external: "https://invoice-app-inky-nine.vercel.app/",
       image: "/invoice.png",
     },
+    // {
+    //   title: "Ohana Agency",
+    //   description:
+    //     "A comprehensive web application that solves [Problem]. Features include real-time data processing, responsive design, and seamless user authentication.",
+    //   technologies: ["Next.js", "Framer Motion", "Tailwind CSS"],
+    //   github: "https://github.com/Apex10A",
+    //   external: "https://ohana-webcompany.vercel.app/",
+    //   image: "/ohana.png",
+    // },
     {
-      title: "Ohana Agency",
-      description:
-        "A comprehensive web application that solves [Problem]. Features include real-time data processing, responsive design, and seamless user authentication.",
-      technologies: ["Next.js", "Framer Motion", "Tailwind CSS"],
-      github: "https://github.com/Apex10A",
-      external: "https://ohana-webcompany.vercel.app/",
-      image: "/ohana.png",
-    },
-        {
       title: "Vendra (Coming soon)",
       description:
         "A comprehensive multi-vendor e-commerce platform that streamlines the connection between independent sellers and customers through a unified marketplace. Features include a dedicated vendor dashboard with real-time sales analytics using Recharts, advanced product filtering and search, secure multi-role authentication with Next-Auth, and a complete order management system integrated with Prisma and PostgreSQL.",
@@ -149,6 +185,7 @@ In my spare time, you can usually find me drawing, flipping through a self-devel
       "Framer Motion",
       "Chakra UI",
       "Tailwind CSS",
+      "Chrome Extensions (MV3)",
     ],
     stateManagement: ["Zustand", "React Context", "React Query"],
     tools: [
@@ -156,6 +193,9 @@ In my spare time, you can usually find me drawing, flipping through a self-devel
       "GitHub",
       "Bitbucket",
       "Jira",
+      "Web Crypto API",
+      "WebSocket",
+      "IndexedDB",
       "Figma",
       "Vite",
       "Vitest",
@@ -175,6 +215,8 @@ In my spare time, you can usually find me drawing, flipping through a self-devel
       "Component-driven architecture",
       "Responsive design",
       "Performance optimisation",
+      "Security-first architecture",
+      "Client-side encryption",
       "Accessibility (a11y)",
       "Agile/Sprint workflows",
       "Test-driven discipline",
