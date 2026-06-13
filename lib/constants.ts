@@ -91,6 +91,24 @@ In my spare time, you can usually find me drawing, flipping through a self-devel
       image: "/gbejaa.png",
     },
     {
+      title: "Lantern — Visual Query Builder",
+      description:
+        "A visual query builder that lets developers and analysts compose nested database filters without writing SQL by hand. Features include schema-driven condition cards, unlimited AND/OR nesting with drag-and-drop reorder, live SQL/MongoDB/GraphQL preview, real-time validation, mock execution against sample datasets, import/export JSON, presets and snapshots, plus a marketing landing page and full documentation site.",
+      technologies: [
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "Zustand",
+        "Framer Motion",
+        "@dnd-kit",
+        "Vitest",
+        "React Testing Library",
+      ],
+      github: "https://github.com/Apex10A/query-builder",
+      external: "https://query-builder-six-gamma.vercel.app/",
+      image: "/lantern.png", // add a screenshot to your portfolio /public folder
+    },
+    {
       title: "Habit Tracker PWA",
       description:
         "A spec-driven Progressive Web App built from a formal Technical Requirements Document. The primary focus was engineering discipline — strict data contracts, deterministic route behavior, and a full multi-layer test suite spanning unit, integration, and end-to-end layers. Features include local authentication, habit management with streak tracking, and offline support via a custom service worker.",
@@ -107,6 +125,7 @@ In my spare time, you can usually find me drawing, flipping through a self-devel
       external: "https://habit-tracker-mobile-first.vercel.app/",
       image: "/habit-tracker.png",
     },
+
     {
       title: "AI Page Summarizer",
       description:
