@@ -312,6 +312,7 @@ In my spare time, you can usually find me drawing, flipping through a self-devel
   navLinks: [
     { name: "About", href: "#about" },
     { name: "Experience", href: "#experience" },
+    { name: "Skills", href: "#skills" },
     { name: "Projects", href: "#projects" },
     { name: "Contact", href: "#contact" },
   ],
