@@ -1,6 +1,8 @@
 import { DATA } from "@/lib/constants";
 import type { Project, ProjectCategory } from "@/lib/types";
 
+export { hasCaseStudy } from "@/lib/case-studies";
+
 export const PROJECT_CATEGORY_LABELS: Record<ProjectCategory, string> = {
   security: "Security",
   "developer-tools": "Developer Tools",

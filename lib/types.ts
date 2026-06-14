@@ -45,3 +45,20 @@ export interface Award {
   title: string;
   description: string;
 }
+
+export interface CaseStudyDecision {
+  title: string;
+  choice: string;
+  rationale: string;
+}
+
+export interface CaseStudy {
+  slug: string;
+  overview: string;
+  problem: string;
+  approach: string;
+  decisions: CaseStudyDecision[];
+  outcomes?: string[];
+  /** Reserved for PR 8 — Build Notes video embed */
+  videoUrl?: string;
+}
