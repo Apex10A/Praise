@@ -8,8 +8,9 @@ const gabarito = Gabarito({
 });
 
 export const metadata: Metadata = {
-  title: "Praise Afolabi",
-  description: "Praise Afolabi is a Frontend engineer who specializes in building exceptional digital experiences.",
+  title: "Praise Afolabi | Frontend Engineer & QA",
+  description:
+    "Frontend engineer who builds accessible, pixel-perfect interfaces and backs them with unit, integration, and E2E test coverage.",
 };
 
 export default function RootLayout({

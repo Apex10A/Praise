@@ -5,23 +5,23 @@ import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
-    <section className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24">
+    <section
+      aria-label="Introduction"
+      className="mb-12 scroll-mt-16 lg:hidden md:mb-16"
+    >
       <motion.div
         initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
+        animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        viewport={{ once: true }}
       >
-        <h1 className="text-accent font-mono mb-4">Hi, my name is</h1>
-        <h2 className="text-4xl font-bold tracking-tight text-lightest-slate sm:text-7xl">
-          {DATA.name}.
+        <p className="mb-3 font-mono text-sm text-accent">{DATA.role}</p>
+        <h2 className="text-3xl font-bold tracking-tight text-lightest-slate sm:text-5xl">
+          {DATA.headline}
         </h2>
-        <h3 className="mt-2 text-3xl font-bold tracking-tight text-slate sm:text-6xl">
-          I build things for the web.
-        </h3>
-        <p className="mt-6 max-w-lg leading-relaxed text-slate">
-          {DATA.intro}
+        <p className="mt-2 text-2xl font-bold tracking-tight text-slate sm:text-4xl">
+          {DATA.headlineAccent}
         </p>
+        <p className="mt-6 max-w-lg leading-relaxed text-slate">{DATA.intro}</p>
       </motion.div>
     </section>
   );

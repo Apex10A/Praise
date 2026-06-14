@@ -36,7 +36,7 @@ export default function Sidebar() {
         <h2 className="mt-3 text-lg font-medium tracking-tight text-lightest-slate sm:text-xl">
           {DATA.role}
         </h2>
-        <p className="mt-4 max-w-xs leading-normal text-slate">
+        <p className="mt-4 hidden max-w-xs leading-normal text-slate lg:block">
           {DATA.intro}
         </p>
 

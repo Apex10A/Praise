@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import Sidebar from "@/components/Sidebar";
 import Socials from "@/components/Socials";
+import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Experience from "@/components/Experience";
 import Skills from "@/components/Skills";
@@ -36,6 +37,7 @@ export default function Home() {
           <Sidebar />
           
           <main className="pt-24 lg:w-2/3 lg:py-24">
+            <Hero />
             <About />
             <Experience />
             <Skills />
