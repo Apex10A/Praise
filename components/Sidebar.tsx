@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { Download, Mail } from "lucide-react";
 import { DATA } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 
@@ -67,6 +68,24 @@ export default function Sidebar() {
             ))}
           </ul>
         </nav>
+
+        <div className="mt-10 hidden flex-col gap-3 lg:flex">
+          <a
+            href={DATA.socials.email}
+            className="inline-flex items-center gap-2 text-sm font-medium text-slate transition hover:text-accent"
+          >
+            <Mail className="h-4 w-4" aria-hidden="true" />
+            Email me
+          </a>
+          <a
+            href={DATA.resume.url}
+            download={DATA.resume.fileName}
+            className="inline-flex items-center gap-2 text-sm font-medium text-slate transition hover:text-accent"
+          >
+            <Download className="h-4 w-4" aria-hidden="true" />
+            Download resume
+          </a>
+        </div>
       </div>
 
       <ul className="ml-1 mt-8 flex items-center lg:hidden" aria-label="Social media">

@@ -41,6 +41,15 @@ export interface Education {
   description: string[];
 }
 
+export interface Experience {
+  company: string;
+  role: string;
+  period: string;
+  location: string;
+  description: string[];
+  technologies: string[];
+}
+
 export interface Award {
   title: string;
   description: string;
