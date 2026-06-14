@@ -52,13 +52,24 @@ export interface CaseStudyDecision {
   rationale: string;
 }
 
+export interface CaseStudyCodeSnippet {
+  file: string;
+  language: string;
+  code: string;
+  caption: string;
+}
+
 export interface CaseStudy {
   slug: string;
   overview: string;
   problem: string;
   approach: string;
+  architecture?: string[];
+  codeSnippet?: CaseStudyCodeSnippet;
   decisions: CaseStudyDecision[];
   outcomes?: string[];
+  limitations?: string[];
+  lessonsLearned?: string[];
   /** Reserved for PR 8 — Build Notes video embed */
   videoUrl?: string;
 }

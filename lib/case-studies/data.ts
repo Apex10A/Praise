@@ -1,28 +1,5 @@
 import type { CaseStudy } from "@/lib/types";
 
-export const mutterboxCaseStudy = {
-  slug: "mutterbox",
-  overview:
-    "MutterBox is a real-time messaging app where encryption happens entirely on the client. The server relays ciphertext only — it never has access to private keys or plaintext messages.",
-  problem:
-    "Most chat apps ask users to trust the platform with their messages. I wanted to prove I could build E2EE in the browser using native Web Crypto APIs — without third-party crypto libraries — while still supporting multi-device key recovery and real-time delivery.",
-  approach:
-    "Hybrid encryption on the client: RSA-OAEP for key exchange, AES-GCM for message bodies. Private keys are generated in-browser, wrapped with PBKDF2-derived keys, and persisted in IndexedDB. WebSocket handles delivery with optimistic UI while ciphertext is in flight.",
-  decisions: [
-    {
-      title: "Key storage",
-      choice: "IndexedDB with PBKDF2-wrapped private keys",
-      rationale:
-        "Keys never leave the client. Wrapping with a user-derived key allows restoration on new devices without sending private key material to the server.",
-    },
-  ],
-  outcomes: [
-    "Server-side message handlers operate on ciphertext only",
-    "Client generates and restores key pairs without a trusted third party",
-    "Optimistic UI keeps the chat responsive during WebSocket round-trips",
-  ],
-} satisfies CaseStudy;
-
 export const lanternCaseStudy = {
   slug: "lantern",
   overview:
