@@ -17,6 +17,7 @@ export const habitTrackerCaseStudy = {
     "Service worker caches the app shell (`/`, manifest, icons); navigate requests fall back to cached `/` when the network is unavailable.",
     "Test pyramid: Vitest for streaks/validators/habits/auth units → RTL for signup/login/habit form → Playwright for redirects, isolation, persistence, and offline.",
   ],
+  architectureTitle: "How the App Works",
   codeSnippet: {
     file: "src/lib/streaks.ts",
     language: "typescript",
@@ -103,4 +104,15 @@ export const habitTrackerCaseStudy = {
     "Playwright was essential for the behaviors units can't reach: redirect timing, localStorage seeding across pages, and offline context simulation.",
     "PWA offline testing needs a deliberate sequence — load online first, cache the shell, then go offline. Skipping that order produces flaky or meaningless offline tests.",
   ],
+  buildNote: {
+    summary:
+      "Spec-driven PWA development from TRD to test suite — defining data contracts first, layering unit/integration/E2E tests by risk, and the exact sequence for testing offline behavior.",
+    topics: [
+      "Spec-driven dev",
+      "Test pyramid",
+      "PWA",
+      "Service workers",
+      "Playwright",
+    ],
+  },
 } satisfies CaseStudy;

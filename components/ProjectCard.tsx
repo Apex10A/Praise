@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, ExternalLink } from "lucide-react";
 import { SiGithub } from "react-icons/si";
 import { hasCaseStudy, PROJECT_CATEGORY_LABELS } from "@/lib/projects";
+import { getCaseStudyBySlug } from "@/lib/case-studies";
 import type { Project } from "@/lib/types";
 
 interface ProjectCardProps {
@@ -21,6 +22,9 @@ export default function ProjectCard({
 }: ProjectCardProps) {
   const isFeatured = variant === "featured";
   const showCaseStudy = hasCaseStudy(project.slug);
+  const buildNote = showCaseStudy
+    ? getCaseStudyBySlug(project.slug)?.buildNote
+    : undefined;
 
   return (
     <motion.li
@@ -98,6 +102,15 @@ export default function ProjectCard({
                 className="z-20 inline-flex items-center gap-1 text-sm font-medium text-accent hover:underline"
               >
                 Read case study
+                <ArrowRight className="h-3.5 w-3.5" aria-hidden="true" />
+              </Link>
+            )}
+            {buildNote && (
+              <Link
+                href={`/projects/${project.slug}#build-notes`}
+                className="z-20 inline-flex items-center gap-1 text-sm text-slate hover:text-accent"
+              >
+                Build notes
                 <ArrowRight className="h-3.5 w-3.5" aria-hidden="true" />
               </Link>
             )}
