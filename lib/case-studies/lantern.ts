@@ -17,6 +17,7 @@ export const lanternCaseStudy = {
     "The executor evaluates the same tree against bundled mock users/orders datasets with pagination and sorting.",
     "Import/export preserves the full tree as versioned JSON; presets and history snapshots store named queries.",
   ],
+  architectureTitle: "How a Query Flows",
   codeSnippet: {
     file: "lib/engine/sql-generator.ts",
     language: "typescript",
@@ -102,4 +103,15 @@ export function generateSql(root: QueryRoot, schema: DataSourceSchema) {
     "Scoped drag-and-drop per group was the difference between a flaky DnD experience and one that works at nested depth.",
     "Multiple output formats from one tree is a strong architecture test — if the model can't serialize cleanly to SQL and MongoDB, the UI model is probably wrong.",
   ],
+  buildNote: {
+    summary:
+      "Building a visual query builder from the data model up — recursive condition trees, live SQL/MongoDB preview, drag-and-drop nesting, and why the tree mutation API mattered more than the UI.",
+    topics: [
+      "Recursive trees",
+      "Query engines",
+      "Zustand",
+      "Drag-and-drop",
+      "Vitest",
+    ],
+  },
 } satisfies CaseStudy;

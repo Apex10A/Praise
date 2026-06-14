@@ -17,6 +17,7 @@ export const mutterboxCaseStudy = {
     "Recipient decrypts the session key with their RSA private key from IndexedDB, then decrypts the body.",
     "On login from a new browser, the client re-derives a wrapping key from the password and unwraps the private key into IndexedDB.",
   ],
+  architectureTitle: "How a Message Flows",
   codeSnippet: {
     file: "src/lib/crypto.ts",
     language: "typescript",
@@ -107,4 +108,15 @@ export const mutterboxCaseStudy = {
     "Building the decrypt path for sent messages early would have saved debugging time — dual key wrapping needs to be designed in, not bolted on.",
     "Documenting the security trade-offs honestly matters more than claiming 'unbreakable' — every E2EE system has trust assumptions.",
   ],
+  buildNote: {
+    summary:
+      "How I built client-side E2EE from scratch — generating RSA key pairs in the browser, hybrid AES-GCM encryption, PBKDF2 key wrapping, and the bugs that appeared when I tried to read my own sent messages.",
+    topics: [
+      "Web Crypto API",
+      "Hybrid encryption",
+      "Key wrapping",
+      "IndexedDB",
+      "WebSocket",
+    ],
+  },
 } satisfies CaseStudy;

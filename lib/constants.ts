@@ -316,6 +316,7 @@ In my spare time, you can usually find me drawing, flipping through a self-devel
     { name: "Experience", href: "#experience" },
     { name: "Skills", href: "#skills" },
     { name: "Projects", href: "#projects" },
+    { name: "Build Notes", href: "#build-notes" },
     { name: "Contact", href: "#contact" },
   ],
 };

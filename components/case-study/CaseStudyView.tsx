@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ExternalLink } from "lucide-react";
 import { SiGithub } from "react-icons/si";
+import VideoEmbed from "@/components/build-notes/VideoEmbed";
 import CaseStudyLayout from "@/components/case-study/CaseStudyLayout";
 import CaseStudySection, {
   CaseStudyArchitectureFlow,
@@ -16,6 +17,54 @@ import type { CaseStudy, Project } from "@/lib/types";
 interface CaseStudyViewProps {
   project: Project;
   caseStudy: CaseStudy;
+}
+
+function BuildNotesSection({
+  project,
+  caseStudy,
+}: {
+  project: Project;
+  caseStudy: CaseStudy;
+}) {
+  const buildNote = caseStudy.buildNote;
+
+  if (!buildNote) {
+    return null;
+  }
+
+  return (
+    <CaseStudySection id="build-notes" title="Build Notes">
+      <p className="mb-6 text-light-slate">{buildNote.summary}</p>
+
+      {buildNote.topics.length > 0 && (
+        <ul
+          className="mb-6 flex flex-wrap gap-2"
+          aria-label="Topics covered in build notes"
+        >
+          {buildNote.topics.map((topic) => (
+            <li key={topic}>
+              <span className="rounded-full bg-accent/10 px-3 py-1 text-xs font-medium text-accent">
+                {topic}
+              </span>
+            </li>
+          ))}
+        </ul>
+      )}
+
+      {buildNote.videoUrl ? (
+        <VideoEmbed
+          url={buildNote.videoUrl}
+          title={`${project.title} build walkthrough`}
+        />
+      ) : (
+        <p className="rounded-md border border-dashed border-slate/30 bg-light-navy/20 p-5 text-light-slate">
+          Video walkthrough coming soon — this page will host a recording
+          documenting how this project was built, the tradeoffs involved, and
+          what broke along the way.
+        </p>
+      )}
+    </CaseStudySection>
+  );
 }
 
 export default function CaseStudyView({
@@ -74,6 +123,14 @@ export default function CaseStudyView({
               <SiGithub size={18} />
               Source code
             </a>
+            {caseStudy.buildNote && (
+              <Link
+                href="#build-notes"
+                className="inline-flex items-center gap-1.5 text-sm font-medium text-slate hover:text-accent"
+              >
+                Build notes
+              </Link>
+            )}
           </div>
 
           <ul
@@ -104,7 +161,10 @@ export default function CaseStudyView({
           </CaseStudySection>
 
           {caseStudy.architecture && caseStudy.architecture.length > 0 && (
-            <CaseStudySection id="architecture" title="How a Message Flows">
+            <CaseStudySection
+              id="architecture"
+              title={caseStudy.architectureTitle ?? "How It Works"}
+            >
               <CaseStudyArchitectureFlow steps={caseStudy.architecture} />
             </CaseStudySection>
           )}
@@ -143,35 +203,15 @@ export default function CaseStudyView({
             </CaseStudySection>
           )}
 
-          {caseStudy.videoUrl ? (
-            <CaseStudySection id="build-notes" title="Build Notes">
-              <div className="aspect-video overflow-hidden rounded border border-slate/20">
-                <iframe
-                  src={caseStudy.videoUrl}
-                  title={`${project.title} build walkthrough`}
-                  className="h-full w-full"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                />
-              </div>
-            </CaseStudySection>
-          ) : (
-            <CaseStudySection id="build-notes" title="Build Notes">
-              <p className="rounded-md border border-dashed border-slate/30 bg-light-navy/20 p-5 text-light-slate">
-                Video walkthrough coming in a future update — documenting how
-                this project was built, the tradeoffs involved, and what broke
-                along the way.
-              </p>
-            </CaseStudySection>
-          )}
+          <BuildNotesSection project={project} caseStudy={caseStudy} />
         </div>
 
         <footer className="mt-16 border-t border-slate/20 pt-8">
           <Link
-            href="/#projects"
+            href="/#build-notes"
             className="text-sm font-medium text-slate transition hover:text-accent"
           >
-            ← View all projects
+            ← View all build notes
           </Link>
         </footer>
       </article>

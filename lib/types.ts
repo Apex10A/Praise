@@ -59,17 +59,24 @@ export interface CaseStudyCodeSnippet {
   caption: string;
 }
 
+export interface BuildNote {
+  summary: string;
+  topics: string[];
+  duration?: string;
+  videoUrl?: string;
+}
+
 export interface CaseStudy {
   slug: string;
   overview: string;
   problem: string;
   approach: string;
   architecture?: string[];
+  architectureTitle?: string;
   codeSnippet?: CaseStudyCodeSnippet;
   decisions: CaseStudyDecision[];
   outcomes?: string[];
   limitations?: string[];
   lessonsLearned?: string[];
-  /** Reserved for PR 8 — Build Notes video embed */
-  videoUrl?: string;
+  buildNote?: BuildNote;
 }
