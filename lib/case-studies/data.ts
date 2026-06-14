@@ -1,28 +1,5 @@
 import type { CaseStudy } from "@/lib/types";
 
-export const lanternCaseStudy = {
-  slug: "lantern",
-  overview:
-    "Lantern is a visual query builder that turns nested filter logic into SQL, MongoDB, or GraphQL — with live preview, validation, and mock execution against sample datasets.",
-  problem:
-    "Non-technical stakeholders and junior developers often need complex filtered queries but struggle with nested AND/OR logic in raw query languages. Errors usually show up at runtime, not while composing the query.",
-  approach:
-    "Schema-driven condition cards stored in Zustand, with @dnd-kit for drag-and-drop reordering. A query engine serializes the tree into multiple output formats, validates conditions against the schema in real time, and runs mock execution against bundled sample data.",
-  decisions: [
-    {
-      title: "State model",
-      choice: "Normalized condition tree in Zustand",
-      rationale:
-        "Nested AND/OR groups need immutable updates and predictable reordering. A flat store with explicit group IDs made drag-and-drop and serialization easier to test.",
-    },
-  ],
-  outcomes: [
-    "Live preview updates as conditions change",
-    "Validation catches type mismatches before mock execution",
-    "JSON import/export preserves complex filter trees",
-  ],
-} satisfies CaseStudy;
-
 export const habitTrackerCaseStudy = {
   slug: "habit-tracker-pwa",
   overview:

@@ -1,4 +1,5 @@
-import { habitTrackerCaseStudy, lanternCaseStudy } from "@/lib/case-studies/data";
+import { habitTrackerCaseStudy } from "@/lib/case-studies/data";
+import { lanternCaseStudy } from "@/lib/case-studies/lantern";
 import { mutterboxCaseStudy } from "@/lib/case-studies/mutterbox";
 import type { CaseStudy } from "@/lib/types";
 
