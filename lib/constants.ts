@@ -1,4 +1,4 @@
-import type { Project } from "@/lib/types";
+import type { Experience, Project } from "@/lib/types";
 
 export const DATA = {
   name: "Praise Afolabi",
@@ -26,7 +26,9 @@ In my spare time, you can usually find me drawing, flipping through a self-devel
       period: "Oct 2025 – Present",
       location: "Remote",
       description: [
-        "At Cleaques, I work on the frontend of a diaspora-focused travel platform covering flights, stays, and rides. My work spans building a multi-service vendor dashboard for real-time listing management, integrating a digital wallet and payment flow for seamless in-app transactions, and crafting fluid UI animations and complex booking states using Framer Motion and Zustand.",
+        "Building the frontend for a diaspora-focused travel platform covering flights, stays, and rides.",
+        "Developed a multi-service vendor dashboard for real-time listing management and integrated a digital wallet with in-app payment flows.",
+        "Crafted fluid UI animations and complex booking states using Framer Motion and Zustand.",
       ],
       technologies: [
         "Next.js",
@@ -44,7 +46,9 @@ In my spare time, you can usually find me drawing, flipping through a self-devel
       period: "Jun 2025 – Nov 2025",
       location: "Onsite · Lagos, Nigeria",
       description: [
-        "At this Techstars-backed startup, I built fintech products centered around payroll loans and BNPL services for civil servants. This included developing and maintaining cross-platform UI components across Next.js and React Native, building accessible and responsive interfaces with Chakra UI, and owning critical financial flows such as loan applications and repayment dashboards — all under strict fintech design and compliance standards.",
+        "Built fintech products for payroll loans and BNPL services at a Techstars-backed startup serving civil servants.",
+        "Developed cross-platform UI components across Next.js and React Native with Chakra UI.",
+        "Owned critical financial flows — loan applications and repayment dashboards — under strict fintech design and compliance standards.",
       ],
       technologies: [
         "Next.js",
@@ -54,26 +58,15 @@ In my spare time, you can usually find me drawing, flipping through a self-devel
         "Bitbucket",
       ],
     },
-    //  {
-    //   company: "HNG Zuri",
-    //   role: "Frontend Engineer",
-    //   period: "Jun 2025 – Nov 2025",
-    //   location: "Remote ",
-    //   description: [
-    //     "Built fintech products for a Techstars-backed startup offering payroll loans and BNPL services.",
-    //     "Built and maintained cross-platform UI components using Next.js and React Native for consistency.",
-    //     "Built accessible, responsive interfaces with Chakra UI following strict fintech design standards.",
-    //     "Built critical financial flows including loan applications and repayment dashboards for civil servants.",
-    //   ],
-    //   technologies: ["Next.js", "React Native", "Chakra UI", "React Query", "Git", "Bitbucket"],
-    // },
     {
       company: "IAIIEA",
       role: "Frontend Engineer",
       period: "Jun 2022 – Feb 2025",
-      location: "Remote ",
+      location: "Remote",
       description: [
-        "At IAIIEA, an NGO focused on integrity and evaluation, I lead the frontend development of a comprehensive web platform built with Next.js, TypeScript, and Tailwind CSS. I collaborated closely on shaping the product's flow and architecture, and my work spans public-facing landing pages, an admin dashboard with data visualizations using Recharts, a members-only portal, authentication, event scheduling, and a Flutterwave-powered payment integration — with Zustand managing application state and Framer Motion handling transitions throughout.",
+        "Led frontend development for a comprehensive Next.js platform at an international integrity and evaluation NGO.",
+        "Delivered public landing pages, an admin dashboard with Recharts visualizations, a members-only portal, auth, and event scheduling.",
+        "Integrated Flutterwave payments with Zustand for state management and Framer Motion for transitions throughout.",
       ],
       technologies: [
         "Next.js",
@@ -83,7 +76,7 @@ In my spare time, you can usually find me drawing, flipping through a self-devel
         "Zustand",
       ],
     },
-  ],
+  ] satisfies Experience[],
   projects: [
     {
       slug: "mutterbox",
@@ -310,6 +303,16 @@ In my spare time, you can usually find me drawing, flipping through a self-devel
     twitter: "https://x.com/dev_apexxr",
     instagram: "https://instagram.com",
     email: "mailto:pafolabi740@gmail.com",
+  },
+  resume: {
+    url: "/resume.pdf",
+    fileName: "Praise-Afolabi-Resume.pdf",
+  },
+  hiring: {
+    status: "Open to opportunities",
+    headline: "Let's build something solid.",
+    message:
+      "I'm open to frontend engineering and QA-focused roles — especially teams that care about accessible UI and real test coverage. Whether you're hiring or just want to talk shop, my inbox is open.",
   },
   navLinks: [
     { name: "About", href: "#about" },
