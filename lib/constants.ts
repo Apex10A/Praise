@@ -1,3 +1,5 @@
+import type { Project } from "@/lib/types";
+
 export const DATA = {
   name: "Praise Afolabi",
   role: "Frontend Engineer & QA",
@@ -82,70 +84,13 @@ In my spare time, you can usually find me drawing, flipping through a self-devel
   ],
   projects: [
     {
-      title: "GbejaQR",
-      description:
-        "A comprehensive web application that solves the security risks associated with malicious QR codes by providing a real-time verification and protection platform. Features include AI-powered threat detection for phishing and malware, deep link analysis with redirect exposure, and a privacy-first scanning engine optimized for mobile performance.",
-      technologies: ["Next.js", "Framer Motion", "Tailwind CSS"],
-      github: "https://github.com/Apex10A",
-      external: "https://v0-gbeja-qr-landing-page-design.vercel.app/",
-      image: "/gbejaa.png",
-    },
-    {
-      title: "Lantern — Visual Query Builder",
-      description:
-        "A visual query builder that lets developers and analysts compose nested database filters without writing SQL by hand. Features include schema-driven condition cards, unlimited AND/OR nesting with drag-and-drop reorder, live SQL/MongoDB/GraphQL preview, real-time validation, mock execution against sample datasets, import/export JSON, presets and snapshots, plus a marketing landing page and full documentation site.",
-      technologies: [
-        "Next.js",
-        "TypeScript",
-        "Tailwind CSS",
-        "Zustand",
-        "Framer Motion",
-        "@dnd-kit",
-        "Vitest",
-        "React Testing Library",
-      ],
-      github: "https://github.com/Apex10A/query-builder",
-      external: "https://query-builder-six-gamma.vercel.app/",
-      image: "/lantern.png", // add a screenshot to your portfolio /public folder
-    },
-    {
-      title: "Habit Tracker PWA",
-      description:
-        "A spec-driven Progressive Web App built from a formal Technical Requirements Document. The primary focus was engineering discipline — strict data contracts, deterministic route behavior, and a full multi-layer test suite spanning unit, integration, and end-to-end layers. Features include local authentication, habit management with streak tracking, and offline support via a custom service worker.",
-      technologies: [
-        "Next.js",
-        "TypeScript",
-        "Tailwind CSS",
-        "Vitest",
-        "Playwright",
-        "React Testing Library",
-        "PWA",
-      ],
-      github: "https://github.com/Apex10A/Habit-tracker-mobile-first",
-      external: "https://habit-tracker-mobile-first.vercel.app/",
-      image: "/habit-tracker.png",
-    },
-
-    {
-      title: "AI Page Summarizer",
-      description:
-        "A Chrome Extension (Manifest V3) that extracts content from any webpage and generates structured AI summaries using the Gemini API. Built with a security-first architecture — the API key lives exclusively in the background service worker, never exposed to content scripts or the popup. Features include bullet-point summaries, key insights, estimated reading time, and a 24-hour URL-based cache to prevent duplicate API calls.",
-      technologies: [
-        "Chrome Extension",
-        "Manifest V3",
-        "JavaScript",
-        "Gemini API",
-        "Service Worker",
-        "Chrome Storage API",
-      ],
-      github: "https://github.com/Apex10A/AI-Page-Summarizer-Chrome-Extension",
-      external: "https://github.com/Apex10A/AI-Page-Summarizer-Chrome-Extension",
-      image: "/extension.png",
-    },
-    {
+      slug: "mutterbox",
       title: "MutterBox — E2EE Messaging",
+      tagline: "End-to-end encryption where the server never sees plaintext.",
       description:
-        "A secure end-to-end encrypted messaging application where the server never sees plaintext. Built with the Web Crypto API using hybrid encryption — AES-GCM for message encryption and RSA-OAEP for key exchange. Private keys are generated on the client, wrapped with PBKDF2-derived keys, and stored exclusively in IndexedDB. Features real-time messaging via WebSocket, automatic key restoration on new devices, and optimistic UI updates.",
+        "Built with the Web Crypto API using hybrid encryption — AES-GCM for message encryption and RSA-OAEP for key exchange. Private keys are generated on the client, wrapped with PBKDF2-derived keys, and stored exclusively in IndexedDB, with real-time messaging via WebSocket and optimistic UI updates.",
+      featured: true,
+      category: "security",
       technologies: [
         "Next.js",
         "TypeScript",
@@ -161,29 +106,125 @@ In my spare time, you can usually find me drawing, flipping through a self-devel
       image: "/e2e.png",
     },
     {
-      title: "Invoice app",
+      slug: "lantern",
+      title: "Lantern — Visual Query Builder",
+      tagline: "Compose nested database filters visually — no raw SQL required.",
       description:
-        "A comprehensive web application that solves the challenge of fragmented invoice management for freelancers and small businesses. Features include real-time total calculations, status-based filtering, local data persistence via localStorage, and a fully responsive design with native dark mode support.",
+        "Schema-driven condition cards with unlimited AND/OR nesting, drag-and-drop reorder, live SQL/MongoDB/GraphQL preview, real-time validation, mock execution against sample datasets, and import/export JSON with presets and snapshots.",
+      featured: true,
+      category: "developer-tools",
+      technologies: [
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "Zustand",
+        "Framer Motion",
+        "@dnd-kit",
+        "Vitest",
+        "React Testing Library",
+      ],
+      github: "https://github.com/Apex10A/query-builder",
+      external: "https://query-builder-six-gamma.vercel.app/",
+      image: "/lantern.png",
+    },
+    {
+      slug: "habit-tracker-pwa",
+      title: "Habit Tracker PWA",
+      tagline: "Spec-driven PWA with full unit, integration, and E2E coverage.",
+      description:
+        "Built from a formal Technical Requirements Document with strict data contracts, deterministic route behavior, and a multi-layer test suite. Includes local authentication, habit management with streak tracking, and offline support via a custom service worker.",
+      featured: true,
+      category: "testing",
+      technologies: [
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "Vitest",
+        "Playwright",
+        "React Testing Library",
+        "PWA",
+      ],
+      github: "https://github.com/Apex10A/Habit-tracker-mobile-first",
+      external: "https://habit-tracker-mobile-first.vercel.app/",
+      image: "/habit-tracker.png",
+    },
+    {
+      slug: "ai-page-summarizer",
+      title: "AI Page Summarizer",
+      tagline: "Manifest V3 extension with a security-first Gemini API architecture.",
+      description:
+        "Extracts content from any webpage and generates structured AI summaries. The API key lives exclusively in the background service worker — never exposed to content scripts or the popup — with bullet-point summaries, key insights, and a 24-hour URL-based cache.",
+      featured: false,
+      category: "security",
+      technologies: [
+        "Chrome Extension",
+        "Manifest V3",
+        "JavaScript",
+        "Gemini API",
+        "Service Worker",
+        "Chrome Storage API",
+      ],
+      github: "https://github.com/Apex10A/AI-Page-Summarizer-Chrome-Extension",
+      external: "https://github.com/Apex10A/AI-Page-Summarizer-Chrome-Extension",
+      image: "/extension.png",
+    },
+    {
+      slug: "gbejaqr",
+      title: "GbejaQR",
+      tagline: "Real-time QR verification to catch phishing and malicious redirects.",
+      description:
+        "A security-focused web application with AI-powered threat detection, deep link analysis with redirect exposure, and a privacy-first scanning engine optimized for mobile performance.",
+      featured: false,
+      category: "security",
+      technologies: ["Next.js", "Framer Motion", "Tailwind CSS"],
+      github: "https://github.com/Apex10A",
+      external: "https://v0-gbeja-qr-landing-page-design.vercel.app/",
+      image: "/gbejaa.png",
+    },
+    {
+      slug: "editorial-portfolio-sveltekit",
+      title: "Editorial Portfolio — SvelteKit",
+      tagline: "Newspaper-inspired portfolio exploring Svelte 5 runes and GSAP motion.",
+      description:
+        "A framework exploration project with a front-page hero layout, editorial typography, GSAP scroll animations, a custom halftone canvas portrait renderer, and structured content sections driven by Svelte 5 runes.",
+      featured: false,
+      category: "experiments",
+      technologies: [
+        "SvelteKit",
+        "Svelte 5",
+        "TypeScript",
+        "Tailwind CSS",
+        "GSAP",
+        "Vite",
+      ],
+      github: "https://github.com/Apex10A/svelte-kit-portfolio",
+      external: "https://svelte-kit-portfolio.vercel.app/",
+      image: "/portfolio.png",
+    },
+    {
+      slug: "invoice-app",
+      title: "Invoice App",
+      tagline: "Lightweight invoice management for freelancers and small businesses.",
+      description:
+        "Real-time total calculations, status-based filtering, local data persistence via localStorage, and a fully responsive design with native dark mode support.",
+      featured: false,
+      category: "productivity",
       technologies: ["Next.js", "Framer Motion", "Tailwind CSS"],
       github: "https://github.com/Apex10A",
       external: "https://invoice-app-inky-nine.vercel.app/",
       image: "/invoice.png",
     },
-    // {
-    //   title: "Ohana Agency",
-    //   description:
-    //     "A comprehensive web application that solves [Problem]. Features include real-time data processing, responsive design, and seamless user authentication.",
-    //   technologies: ["Next.js", "Framer Motion", "Tailwind CSS"],
-    //   github: "https://github.com/Apex10A",
-    //   external: "https://ohana-webcompany.vercel.app/",
-    //   image: "/ohana.png",
-    // },
     {
-      title: "Vendra (Coming soon)",
+      slug: "vendra",
+      title: "Vendra",
+      tagline: "Multi-vendor marketplace with vendor dashboards and role-based auth.",
       description:
-        "A comprehensive multi-vendor e-commerce platform that streamlines the connection between independent sellers and customers through a unified marketplace. Features include a dedicated vendor dashboard with real-time sales analytics using Recharts, advanced product filtering and search, secure multi-role authentication with Next-Auth, and a complete order management system integrated with Prisma and PostgreSQL.",
+        "A comprehensive e-commerce platform connecting independent sellers and customers through a unified marketplace, with real-time sales analytics, advanced product filtering, secure multi-role authentication, and order management backed by Prisma and PostgreSQL.",
+      featured: false,
+      category: "e-commerce",
+      status: "coming-soon",
       technologies: [
-        "Prism",
+        "Prisma",
         "PostgreSQL",
         "Next.js",
         "Tailwind CSS",
@@ -194,7 +235,7 @@ In my spare time, you can usually find me drawing, flipping through a self-devel
       external: "https://vendra.com",
       image: "/vendraa.png",
     },
-  ],
+  ] satisfies Project[],
   skills: {
     languages: ["JavaScript (ES6+)", "TypeScript", "HTML5", "CSS3"],
     frameworks: [
