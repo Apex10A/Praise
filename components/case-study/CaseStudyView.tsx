@@ -4,7 +4,10 @@ import { ExternalLink } from "lucide-react";
 import { SiGithub } from "react-icons/si";
 import CaseStudyLayout from "@/components/case-study/CaseStudyLayout";
 import CaseStudySection, {
+  CaseStudyArchitectureFlow,
+  CaseStudyCodeBlock,
   CaseStudyDecisionList,
+  CaseStudyLimitationList,
   CaseStudyOutcomeList,
 } from "@/components/case-study/CaseStudySection";
 import { PROJECT_CATEGORY_LABELS } from "@/lib/projects";
@@ -100,6 +103,18 @@ export default function CaseStudyView({
             <p>{caseStudy.approach}</p>
           </CaseStudySection>
 
+          {caseStudy.architecture && caseStudy.architecture.length > 0 && (
+            <CaseStudySection id="architecture" title="How a Message Flows">
+              <CaseStudyArchitectureFlow steps={caseStudy.architecture} />
+            </CaseStudySection>
+          )}
+
+          {caseStudy.codeSnippet && (
+            <CaseStudySection id="code" title="Code Highlight">
+              <CaseStudyCodeBlock {...caseStudy.codeSnippet} />
+            </CaseStudySection>
+          )}
+
           {caseStudy.decisions.length > 0 && (
             <CaseStudySection id="decisions" title="Key Decisions">
               <CaseStudyDecisionList decisions={caseStudy.decisions} />
@@ -109,6 +124,22 @@ export default function CaseStudyView({
           {caseStudy.outcomes && caseStudy.outcomes.length > 0 && (
             <CaseStudySection id="outcomes" title="Outcomes">
               <CaseStudyOutcomeList outcomes={caseStudy.outcomes} />
+            </CaseStudySection>
+          )}
+
+          {caseStudy.limitations && caseStudy.limitations.length > 0 && (
+            <CaseStudySection id="limitations" title="Limitations & Trade-offs">
+              <p className="mb-4 text-light-slate">
+                Documenting what the system does not protect against is as
+                important as what it does.
+              </p>
+              <CaseStudyLimitationList limitations={caseStudy.limitations} />
+            </CaseStudySection>
+          )}
+
+          {caseStudy.lessonsLearned && caseStudy.lessonsLearned.length > 0 && (
+            <CaseStudySection id="learnings" title="What I Learned">
+              <CaseStudyOutcomeList outcomes={caseStudy.lessonsLearned} />
             </CaseStudySection>
           )}
 

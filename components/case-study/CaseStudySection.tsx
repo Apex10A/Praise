@@ -60,3 +60,69 @@ export function CaseStudyOutcomeList({ outcomes }: { outcomes: string[] }) {
     </ul>
   );
 }
+
+export function CaseStudyArchitectureFlow({ steps }: { steps: string[] }) {
+  return (
+    <ol className="space-y-4">
+      {steps.map((step, index) => (
+        <li key={step} className="flex gap-4">
+          <span
+            className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-accent/30 bg-accent/10 font-mono text-xs font-semibold text-accent"
+            aria-hidden="true"
+          >
+            {index + 1}
+          </span>
+          <p className="pt-0.5">{step}</p>
+        </li>
+      ))}
+    </ol>
+  );
+}
+
+export function CaseStudyCodeBlock({
+  file,
+  language,
+  code,
+  caption,
+}: {
+  file: string;
+  language: string;
+  code: string;
+  caption: string;
+}) {
+  return (
+    <figure>
+      <figcaption className="mb-3 text-light-slate">{caption}</figcaption>
+      <div className="overflow-hidden rounded-md border border-slate/20 bg-light-navy/60">
+        <div className="border-b border-slate/20 px-4 py-2 font-mono text-xs text-slate">
+          {file}
+        </div>
+        <pre
+          className="overflow-x-auto p-4 font-mono text-xs leading-relaxed text-light-slate"
+          data-language={language}
+        >
+          <code>{code}</code>
+        </pre>
+      </div>
+    </figure>
+  );
+}
+
+export function CaseStudyLimitationList({
+  limitations,
+}: {
+  limitations: string[];
+}) {
+  return (
+    <ul className="space-y-3">
+      {limitations.map((limitation) => (
+        <li
+          key={limitation}
+          className="rounded-md border border-slate/20 bg-light-navy/20 p-4 text-light-slate"
+        >
+          {limitation}
+        </li>
+      ))}
+    </ul>
+  );
+}

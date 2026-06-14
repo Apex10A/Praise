@@ -1,8 +1,5 @@
-import {
-  habitTrackerCaseStudy,
-  lanternCaseStudy,
-  mutterboxCaseStudy,
-} from "@/lib/case-studies/data";
+import { habitTrackerCaseStudy, lanternCaseStudy } from "@/lib/case-studies/data";
+import { mutterboxCaseStudy } from "@/lib/case-studies/mutterbox";
 import type { CaseStudy } from "@/lib/types";
 
 const CASE_STUDIES: CaseStudy[] = [
