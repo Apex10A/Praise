@@ -18,7 +18,8 @@ export default function Projects() {
       <div className="mb-12">
         <p className="mb-8 max-w-2xl text-sm leading-relaxed text-slate">
           Selected work where architecture, security, and engineering discipline
-          matter as much as the UI — with deeper case studies coming soon.
+          matter as much as the UI — with detailed case studies on featured
+          projects.
         </p>
 
         <h3 className="mb-6 text-xs font-bold uppercase tracking-widest text-light-slate">
