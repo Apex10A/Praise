@@ -45,12 +45,12 @@ export default function Skills() {
         viewport={{ once: true }}
       >
         <p className="mb-10 max-w-2xl text-sm leading-relaxed text-slate">
-          Frontend engineering backed by real testing discipline — from component
+          Frontend engineering with a strong testing practice — from component
           tests and E2E flows to spec-driven development and offline PWA
-          verification.
+          coverage.
         </p>
 
-        <SubsectionTitle>Technical Skills</SubsectionTitle>
+        {/* <SubsectionTitle>Technical Skills</SubsectionTitle>
         <div className="mb-16 grid gap-8 sm:grid-cols-2">
           {skillGroups.map((group, index) => (
             <motion.div
@@ -151,7 +151,7 @@ export default function Skills() {
               </div>
             </motion.li>
           ))}
-        </ol>
+        </ol> */}
       </motion.div>
     </section>
   );

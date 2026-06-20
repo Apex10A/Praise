@@ -18,14 +18,14 @@ export default function About() {
         transition={{ duration: 0.5 }}
         viewport={{ once: true }}
       >
-        <div className="mb-8 hidden max-w-2xl lg:block">
+        {/* <div className="mb-8 hidden max-w-2xl lg:block">
           <p className="text-2xl font-bold tracking-tight text-lightest-slate">
             {DATA.headline}
           </p>
           <p className="mt-1 text-xl font-bold tracking-tight text-slate">
             {DATA.headlineAccent}
           </p>
-        </div>
+        </div> */}
 
         <div className="text-left">
           <p
