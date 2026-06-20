@@ -242,8 +242,8 @@ In my spare time, you can usually find me drawing, flipping through a self-devel
     email: "mailto:pafolabi740@gmail.com",
   },
   resume: {
-    url: "/resume.pdf",
-    fileName: "Praise-Afolabi-Resume.pdf",
+    url: "/Praise_Afolabi_CV.pdf",
+    fileName: "Praise_Afolabi_CV.pdf",
   },
   hiring: {
     status: "Open to opportunities",
