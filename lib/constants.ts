@@ -10,11 +10,11 @@ export const DATA = {
   headlineAccent: "I write the tests too.",
   intro:
     "I ship pixel-perfect interfaces backed by unit, integration, and E2E tests.",
-  about: `I'm a frontend engineer who builds polished, accessible UI and writes the tests that back it up. Testing isn't something I hand off — it's part of how I ship components, structure state, and catch regressions before they reach users.
+  about: `I'm a frontend engineer who builds polished, accessible UI and writes the tests that back it up. Testing is part of how I ship components, structure state, and catch regressions before they reach users.
 
 Currently, I'm on the Engineering team at <strong class="text-lightest-slate">Cleaques</strong>, building the frontend for a diaspora-focused travel platform. I drive work across components, tooling, and patterns, partnering with designers and engineers to keep accessibility in the foundation.
 
-Previously, I've worked across <strong class="text-lightest-slate">fintech startups, large organizations, and non-profit platforms</strong> — including <strong class="text-lightest-slate">leading frontend development on the IAIIEA platform</strong>, a full-featured Next.js application with an admin dashboard, members-only portal, payment processing, and event scheduling.
+Previously, I've worked across <strong class="text-lightest-slate">fintech startups and growth-stage companies</strong>, building accessible interfaces, cross-platform components, and critical product flows under real-world constraints.
 
 I'm a <strong class="text-lightest-slate">two-time HNG Internship finalist</strong>, one of Africa's most competitive developer programs, which pushed me to build fast and think clearly under pressure. My testing stack includes Vitest, Playwright, and React Testing Library — covering unit, integration, and end-to-end layers, including offline PWA behavior.
 
@@ -23,8 +23,9 @@ In my spare time, you can usually find me drawing, flipping through a self-devel
     {
       company: "Cleaques",
       role: "Frontend Engineer",
-      period: "Oct 2025 – Present",
+      period: "Oct 2024 – Present",
       location: "Remote",
+      url: "https://app.booking.cleaques.com",
       description: [
         "Building the frontend for a diaspora-focused travel platform covering flights, stays, and rides.",
         "Developed a multi-service vendor dashboard for real-time listing management and integrated a digital wallet with in-app payment flows.",
@@ -42,9 +43,10 @@ In my spare time, you can usually find me drawing, flipping through a self-devel
     },
     {
       company: "VeendHQ",
-      role: "Frontend Engineer (IT)",
-      period: "Jun 2025 – Nov 2025",
+      role: "Frontend Engineer",
+      period: "Jun 2024 – Nov 2025",
       location: "Onsite · Lagos, Nigeria",
+      url: "https://veendhq.com",
       description: [
         "Built fintech products for payroll loans and BNPL services at a Techstars-backed startup serving civil servants.",
         "Developed cross-platform UI components across Next.js and React Native with Chakra UI.",
@@ -56,24 +58,6 @@ In my spare time, you can usually find me drawing, flipping through a self-devel
         "Chakra UI",
         "Redux",
         "Bitbucket",
-      ],
-    },
-    {
-      company: "IAIIEA",
-      role: "Frontend Engineer",
-      period: "Jun 2022 – Feb 2025",
-      location: "Remote",
-      description: [
-        "Led frontend development for a comprehensive Next.js platform at an international integrity and evaluation NGO.",
-        "Delivered public landing pages, an admin dashboard with Recharts visualizations, a members-only portal, auth, and event scheduling.",
-        "Integrated Flutterwave payments with Zustand for state management and Framer Motion for transitions throughout.",
-      ],
-      technologies: [
-        "Next.js",
-        "TypeScript",
-        "Tailwind CSS",
-        "Framer Motion",
-        "Zustand",
       ],
     },
   ] satisfies Experience[],
