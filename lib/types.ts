@@ -22,17 +22,6 @@ export interface Project {
   image: string;
 }
 
-export interface Skills {
-  languages: string[];
-  frameworks: string[];
-  stateManagement: string[];
-  tools: string[];
-  testing: string[];
-  practices: string[];
-}
-
-export type SkillGroupKey = keyof Skills;
-
 export interface Education {
   degree: string;
   institution: string;
