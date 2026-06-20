@@ -1,9 +1,9 @@
-import Image from "next/image";
 import Link from "next/link";
 import { ExternalLink } from "lucide-react";
 import { SiGithub } from "react-icons/si";
 import VideoEmbed from "@/components/build-notes/VideoEmbed";
 import CaseStudyLayout from "@/components/case-study/CaseStudyLayout";
+import ProjectThumbnail from "@/components/ProjectThumbnail";
 import CaseStudySection, {
   CaseStudyArchitectureFlow,
   CaseStudyCodeBlock,
@@ -93,13 +93,12 @@ export default function CaseStudyView({
             {project.tagline}
           </p>
 
-          <div className="relative mt-8 aspect-video w-full overflow-hidden rounded border-2 border-slate/20 bg-slate/10">
-            <Image
+          <div className="mt-8">
+            <ProjectThumbnail
               src={project.image}
               alt={project.title}
-              fill
-              className="object-cover"
               priority
+              className="aspect-video"
             />
           </div>
 

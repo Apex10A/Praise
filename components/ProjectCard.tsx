@@ -1,10 +1,10 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowRight, ExternalLink } from "lucide-react";
 import { SiGithub } from "react-icons/si";
+import ProjectThumbnail from "@/components/ProjectThumbnail";
 import { hasCaseStudy, PROJECT_CATEGORY_LABELS } from "@/lib/projects";
 import { getCaseStudyBySlug } from "@/lib/case-studies";
 import type { Project } from "@/lib/types";
@@ -149,30 +149,20 @@ export default function ProjectCard({
           {showCaseStudy ? (
             <Link
               href={`/projects/${project.slug}`}
-              className={`relative block aspect-video w-full overflow-hidden rounded border-2 border-slate/20 bg-slate/10 transition group-hover:border-slate/50 ${
-                isFeatured ? "lg:aspect-[4/3]" : ""
-              }`}
+              className="group block transition hover:opacity-95"
             >
-              <Image
+              <ProjectThumbnail
                 src={project.image}
                 alt={project.title}
-                fill
-                className="object-cover transition duration-300 group-hover:scale-110"
+                featured={isFeatured}
               />
             </Link>
           ) : (
-            <div
-              className={`relative aspect-video w-full overflow-hidden rounded border-2 border-slate/20 bg-slate/10 transition group-hover:border-slate/50 ${
-                isFeatured ? "lg:aspect-[4/3]" : ""
-              }`}
-            >
-              <Image
-                src={project.image}
-                alt={project.title}
-                fill
-                className="object-cover transition duration-300 group-hover:scale-110"
-              />
-            </div>
+            <ProjectThumbnail
+              src={project.image}
+              alt={project.title}
+              featured={isFeatured}
+            />
           )}
         </div>
       </div>
