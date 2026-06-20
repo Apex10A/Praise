@@ -41,12 +41,13 @@ export default function BuildNotes() {
               href={entry.href}
               className="group relative flex h-full flex-col overflow-hidden rounded-md border border-slate/20 bg-light-navy/20 transition hover:border-accent/30 hover:bg-light-navy/40"
             >
-              <div className="relative aspect-video w-full overflow-hidden border-b border-slate/20 bg-slate/10">
+              <div className="relative aspect-video w-full overflow-hidden border-b border-slate/20 bg-[#d8dee8] shadow-[inset_0_0_0_1px_rgba(255,255,255,0.35)]">
                 <Image
                   src={entry.project.image}
                   alt={entry.project.title}
                   fill
-                  className="object-cover transition duration-300 group-hover:scale-105"
+                  sizes="(max-width: 640px) 100vw, 50vw"
+                  className="object-cover object-top transition duration-500 ease-out group-hover:scale-[1.03]"
                 />
                 <div className="absolute inset-0 flex items-center justify-center bg-navy/40 opacity-0 transition group-hover:opacity-100">
                   <PlayCircle
