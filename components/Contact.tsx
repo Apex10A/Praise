@@ -28,7 +28,7 @@ export default function Contact() {
 
         <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
           <a
-            href={DATA.socials.email}
+            href={`mailto:${DATA.email}`}
             className="inline-flex items-center gap-2 rounded border border-accent px-8 py-3.5 font-mono text-sm text-accent transition hover:bg-accent/10 focus-visible:bg-accent/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/50"
           >
             <Mail className="h-4 w-4" aria-hidden="true" />

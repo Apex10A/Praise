@@ -46,7 +46,7 @@ export default function Sidebar() {
             {DATA.navLinks.map((link) => (
               <li key={link.href}>
                 <Link
-                  className="group flex items-center py-3"
+                  className="group relative flex items-center py-3"
                   href={link.href}
                 >
                   <span
@@ -71,7 +71,7 @@ export default function Sidebar() {
 
         <div className="mt-10 hidden flex-col gap-3 lg:flex">
           <a
-            href={DATA.socials.email}
+            href={`mailto:${DATA.email}`}
             className="inline-flex items-center gap-2 text-sm font-medium text-slate transition hover:text-accent"
           >
             <Mail className="h-4 w-4" aria-hidden="true" />
