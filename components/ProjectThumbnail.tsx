@@ -6,6 +6,7 @@ interface ProjectThumbnailProps {
   alt: string;
   priority?: boolean;
   featured?: boolean;
+  variant?: "card" | "detail";
   className?: string;
 }
 
@@ -14,13 +15,19 @@ export default function ProjectThumbnail({
   alt,
   priority = false,
   featured = false,
+  variant = "card",
   className,
 }: ProjectThumbnailProps) {
+  const isDetail = variant === "detail";
+
   return (
     <div
       className={cn(
-        "relative w-full overflow-hidden rounded-md border border-slate/30 bg-[#d8dee8] shadow-[inset_0_0_0_1px_rgba(255,255,255,0.35)]",
-        featured ? "aspect-[4/3]" : "aspect-video",
+        "relative w-full overflow-hidden bg-[#d8dee8] shadow-[inset_0_0_0_1px_rgba(255,255,255,0.35)]",
+        isDetail
+          ? "aspect-[16/10] rounded-lg border border-slate/40 lg:aspect-[5/3]"
+          : "rounded-md border border-slate/30",
+        !isDetail && (featured ? "aspect-[4/3]" : "aspect-video"),
         className
       )}
     >
@@ -29,8 +36,17 @@ export default function ProjectThumbnail({
         alt={alt}
         fill
         priority={priority}
-        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 320px"
-        className="object-cover object-top transition duration-500 ease-out group-hover:scale-[1.03]"
+        sizes={
+          isDetail
+            ? "(max-width: 1024px) 100vw, 55vw"
+            : "(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 320px"
+        }
+        className={cn(
+          "transition duration-500 ease-out",
+          isDetail
+            ? "object-contain p-3 sm:p-4"
+            : "object-cover object-top group-hover:scale-[1.03]"
+        )}
       />
     </div>
   );
