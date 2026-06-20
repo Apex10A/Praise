@@ -125,7 +125,7 @@ In my spare time, you can usually find me drawing, flipping through a self-devel
       ],
       github: "https://github.com/Apex10A/Habit-tracker-mobile-first",
       external: "https://habit-tracker-mobile-first.vercel.app/",
-      image: "/habit-tracker.png",
+      image: "/hhabit-tracker.png",
     },
     {
       slug: "ai-page-summarizer",
