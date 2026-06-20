@@ -2,23 +2,23 @@ import type { Experience, Project } from "@/lib/types";
 
 export const DATA = {
   name: "Praise Afolabi",
-  role: "Frontend Engineer & QA",
+  role: "Frontend Engineer",
   location: "Akure, Ondo State",
   phone: "+234 816 086 2773",
   email: "pafolabi740@gmail.com",
   headline: "I build accessible frontends.",
-  headlineAccent: "I test them properly.",
+  headlineAccent: "I write the tests too.",
   intro:
-    "I ship pixel-perfect interfaces backed by real test coverage — unit, integration, and E2E.",
-  about: `I'm a frontend engineer who builds and verifies. Quality isn't a phase I run at the end — it's part of how I write components, structure state, and ship features. I care about accessible, pixel-perfect UI and the test suites that prove it holds up.
+    "I ship pixel-perfect interfaces backed by unit, integration, and E2E tests.",
+  about: `I'm a frontend engineer who builds polished, accessible UI and writes the tests that back it up. Testing isn't something I hand off — it's part of how I ship components, structure state, and catch regressions before they reach users.
 
-Currently, I'm on the Engineering team at <strong class="text-lightest-slate">Cleaques</strong>, building the frontend for a diaspora-focused travel platform. I drive work across components, tooling, and patterns, partnering with designers and engineers to keep accessibility in the foundation — not bolted on later.
+Currently, I'm on the Engineering team at <strong class="text-lightest-slate">Cleaques</strong>, building the frontend for a diaspora-focused travel platform. I drive work across components, tooling, and patterns, partnering with designers and engineers to keep accessibility in the foundation.
 
 Previously, I've worked across <strong class="text-lightest-slate">fintech startups, large organizations, and non-profit platforms</strong> — including <strong class="text-lightest-slate">leading frontend development on the IAIIEA platform</strong>, a full-featured Next.js application with an admin dashboard, members-only portal, payment processing, and event scheduling.
 
 I'm a <strong class="text-lightest-slate">two-time HNG Internship finalist</strong>, one of Africa's most competitive developer programs, which pushed me to build fast and think clearly under pressure. My testing stack includes Vitest, Playwright, and React Testing Library — covering unit, integration, and end-to-end layers, including offline PWA behavior.
 
-In my spare time, you can usually find me drawing, flipping through a self-development book, running a career mode on FIFA, or watching Barcelona — because some of us just never gave up on them.`,
+In my spare time, you can usually find me drawing, flipping through a self-development book, running a career mode on PES 17, or watching FC Barcelona — because some of us just never gave up on them.`,
   experience: [
     {
       company: "Cleaques",
@@ -312,7 +312,7 @@ In my spare time, you can usually find me drawing, flipping through a self-devel
     status: "Open to opportunities",
     headline: "Let's build something solid.",
     message:
-      "I'm open to frontend engineering and QA-focused roles — especially teams that care about accessible UI and real test coverage. Whether you're hiring or just want to talk shop, my inbox is open.",
+      "I'm open to frontend engineering roles — especially teams that value accessible UI and developers who write their own tests. Whether you're hiring or just want to talk shop, my inbox is open.",
   },
   navLinks: [
     { name: "About", href: "#about" },

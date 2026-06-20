@@ -2,7 +2,7 @@ import { DATA } from "@/lib/constants";
 import type { SkillGroupKey } from "@/lib/types";
 
 export const SKILL_GROUP_LABELS: Record<SkillGroupKey, string> = {
-  testing: "Testing & QA",
+  testing: "Testing",
   practices: "Engineering Practices",
   languages: "Languages",
   frameworks: "Frameworks & Libraries",
