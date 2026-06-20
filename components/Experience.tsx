@@ -3,6 +3,7 @@
 import SectionHeading from "@/components/SectionHeading";
 import { DATA } from "@/lib/constants";
 import { motion } from "framer-motion";
+import { ExternalLink } from "lucide-react";
 
 function ExperienceDescription({ description }: { description: string[] }) {
   if (description.length === 1) {
@@ -53,11 +54,25 @@ export default function Experience() {
               </header>
               <div className="z-10 sm:col-span-6">
                 <h3 className="font-medium leading-snug text-lightest-slate">
-                  <span className="inline-flex items-baseline font-medium leading-tight text-lightest-slate group/link text-base">
+                  <span className="inline-flex flex-wrap items-baseline font-medium leading-tight text-lightest-slate text-base">
                     {exp.role} ·{" "}
-                    <span className="transition-colors group-hover:text-accent">
-                      {exp.company}
-                    </span>
+                    {exp.url ? (
+                      <a
+                        href={exp.url}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="inline-flex items-baseline text-lightest-slate transition-colors hover:text-accent focus-visible:text-accent group/company"
+                      >
+                        {exp.company}
+                        <ExternalLink
+                          className="ml-1 inline-block h-3.5 w-3.5 shrink-0 opacity-70 transition-transform group-hover/company:-translate-y-px group-hover/company:translate-x-px motion-reduce:transition-none"
+                          aria-hidden="true"
+                        />
+                        <span className="sr-only"> (opens in a new tab)</span>
+                      </a>
+                    ) : (
+                      <span>{exp.company}</span>
+                    )}
                   </span>
                 </h3>
                 <p className="mt-1 text-xs text-light-slate">{exp.location}</p>

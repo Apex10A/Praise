@@ -46,6 +46,7 @@ export interface Experience {
   role: string;
   period: string;
   location: string;
+  url?: string;
   description: string[];
   technologies: string[];
 }
