@@ -10,11 +10,18 @@ export default function CaseStudySection({
   children: React.ReactNode;
 }) {
   return (
-    <section id={id} className="scroll-mt-16">
-      <h2 className="mb-4 text-sm font-bold uppercase tracking-widest text-light-slate">
-        {title}
-      </h2>
-      <div className="text-sm leading-relaxed text-slate">{children}</div>
+    <section
+      id={id}
+      className="scroll-mt-16 border-t border-slate/15 pt-10 first:border-t-0 first:pt-0"
+    >
+      <div className="grid gap-4 sm:grid-cols-8 sm:gap-8 lg:gap-10">
+        <h2 className="sm:col-span-2 sm:sticky sm:top-24 sm:self-start text-xs font-bold uppercase tracking-[0.2em] text-light-slate">
+          {title}
+        </h2>
+        <div className="sm:col-span-6 text-sm leading-relaxed text-slate">
+          {children}
+        </div>
+      </div>
     </section>
   );
 }
