@@ -15,7 +15,13 @@ export interface BuildNoteEntry {
 
 export function getBuildNotes(): BuildNoteEntry[] {
   return getAllCaseStudies()
-    .filter((caseStudy) => caseStudy.buildNote)
+    .filter((caseStudy) => {
+      if (!caseStudy.buildNote) {
+        return false;
+      }
+      const project = getProjectBySlug(caseStudy.slug);
+      return Boolean(project?.featured);
+    })
     .map((caseStudy) => {
       const project = getProjectBySlug(caseStudy.slug)!;
       const buildNote = caseStudy.buildNote!;
