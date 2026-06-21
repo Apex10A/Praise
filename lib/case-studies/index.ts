@@ -1,12 +1,14 @@
+import { aiPageSummarizerCaseStudy } from "@/lib/case-studies/ai-page-summarizer";
 import { habitTrackerCaseStudy } from "@/lib/case-studies/habit-tracker-pwa";
 import { lanternCaseStudy } from "@/lib/case-studies/lantern";
 import { mutterboxCaseStudy } from "@/lib/case-studies/mutterbox";
 import type { CaseStudy } from "@/lib/types";
 
 const CASE_STUDIES: CaseStudy[] = [
-  mutterboxCaseStudy,
+  aiPageSummarizerCaseStudy,
   lanternCaseStudy,
   habitTrackerCaseStudy,
+  mutterboxCaseStudy,
 ];
 
 export function getAllCaseStudies(): CaseStudy[] {
