@@ -23,7 +23,7 @@ In my spare time, you can usually find me drawing, flipping through a self-devel
     {
       company: "Cleaques",
       role: "Frontend Engineer",
-      period: "Oct 2024 – Present",
+      period: "Oct 2025 – Present",
       location: "Remote",
       url: "https://app.booking.cleaques.com",
       description: [
@@ -44,7 +44,7 @@ In my spare time, you can usually find me drawing, flipping through a self-devel
     {
       company: "VeendHQ",
       role: "Frontend Engineer",
-      period: "Jun 2024 – Nov 2025",
+      period: "June 2025 – Nov 2025",
       location: "Onsite · Lagos, Nigeria",
       url: "https://veendhq.com",
       description: [
@@ -58,6 +58,30 @@ In my spare time, you can usually find me drawing, flipping through a self-devel
         "Chakra UI",
         "Redux",
         "Bitbucket",
+      ],
+    },
+    {
+      company: "HNG Internship",
+      role: "Frontend Engineer",
+      period: "2022 - 2025",
+      location: "Remote",
+      url: "https://hng.tech",
+      description: [
+        "Participated in the HNG Internship program for three consecutive years, learning and growing as a frontend engineer.",
+        "Worked on various projects during the internship, including a web application and a mobile application.",
+        "Collaborated with other interns and mentors to build the projects.",
+      ],
+      technologies: [
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "React Testing Library",
+        "Playwright",
+        "Vitest",
+        "Svelte",
+        "SvelteKit",
+        "Vue 3",
+        "Redux"
       ],
     },
   ] satisfies Experience[],
@@ -103,6 +127,31 @@ In my spare time, you can usually find me drawing, flipping through a self-devel
       github: "https://github.com/Apex10A/query-builder",
       external: "https://query-builder-six-gamma.vercel.app/",
       image: "/lantern.png",
+    },
+    {
+      slug: "cryptoflow",
+      title: "CryptoFlow",
+      tagline: "Live crypto terminal with real Binance streams and a violet command-deck UI.",
+      description:
+        "An open-source trading dashboard demo wired to CoinGecko snapshots and Binance WebSocket aggTrade feeds. Features a sidebar command deck, bento-grid charts (line, area, bar, candlestick), a filterable live activity feed for large trades, Aurora Ink theming, onboarding tour, optional trade sounds, and Oracle Mode — cryptic night-time copy for dark mode.",
+      featured: true,
+      category: "experiments",
+      technologies: [
+        "Vue 3",
+        "TypeScript",
+        "Pinia",
+        "Tailwind CSS",
+        "ECharts",
+        "Vue Router",
+        "TanStack Table",
+        "VueUse",
+        "Vite",
+        "CoinGecko API",
+        "Binance WebSocket",
+      ],
+      github: "https://github.com/Apex10A/cryptograph",
+      external: "https://cryptograph-two.vercel.app/", // swap for live URL when deployed
+      image: "/crypto-light.png",
     },
     {
       slug: "habit-tracker-pwa",
